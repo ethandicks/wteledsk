@@ -180,7 +180,7 @@ struct rep_rec {
 #define BLKSZMSK 0x7 // low order 3 bits, only expect to use 2 of them
 
 
-int block_size(ctl)
+int block_size(int ctl)
 {
     int j,sz=128;
     j = ctl & BLKSZMSK;
